@@ -85,21 +85,18 @@
   overflow: hidden;
   }
 
-  .hero-moodbag{
-  content: '';              
-  position: absolute;      
-  top: 0; left: 0;          
-  width: 100%; height: 100%; 
-  background-color: #33333351; 
-  z-index: 1;            
-  }
+.hero-moodbag::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(51, 51, 51, 0.32);
+  z-index: 1;
+}
 
-  .hero-content {
-  position: relative; 
-  z-index: 2;         
-  }
-   
-  .video-background {
+.hero-content {
+  position: relative;
+  z-index: 2;}
+.video-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +106,6 @@
   overflow: hidden;
   background: no-repeat center center/cover;
   }
-
   
   .video-background video {
   width: 100%;
@@ -165,10 +161,10 @@
   margin: 0 auto;
   text-align: center;
   }
-  
+
   /* Sección Productos */
   .Productos {
-  background-color: #b9ddff;
+  background-color: hwb(291 69% 3%);
   }
   
   .Productos h2 {
@@ -182,7 +178,7 @@
 
    /* Pie de página (footer) */
   footer {
-  background-color: #251D82;
+  background-color: #e28bff;
   color: #ffffff;
   padding: 40px 20px 20px;
   text-align: center;
@@ -204,26 +200,26 @@
   }
   }
   
-  .contacto-MoodBag, .redes-sociales {
+  #contacto-MoodBag, .redes-sociales {
   padding: 0 10px;
   }
   
-  .contacto-MoodBag h3, .redes-sociales h3 {
+  #contacto-MoodBag h3, .redes-sociales h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   }
   
-  .contacto-MoodBag address p {
+  #contacto-MoodBag address p {
   margin: 5px 0;
   }
   
-  .contacto-MoodBag a {
+  #contacto-MoodBag a {
   color: #d728ce;
   text-decoration: none;
   transition: color 0.3s;
   }
   
-  .contacto-MoodBag a:hover {
+  #contacto-MoodBag a:hover {
   text-decoration: underline;
   }
   
@@ -239,13 +235,13 @@
   }
   
   .footer-bottom {
-  border-top: 1px solid #86C7D7;
+  border-top: 1px solid #a536e0;
   padding-top: 20px;
   position: relative;
   }
   
   .scroll-to-top-btn {
-  background-color: #b9ddff;
+  background-color: #dd55ff;
   border: none;
   color: #333;
   padding: 10px 15px;
@@ -259,8 +255,8 @@
   }
   
   .scroll-to-top-btn:hover {
-  background-color: #6d8ed6;
-  transform: translateX(-50%) scale(1.1);
+  background-color: #ef89fd;
+  transform: translateX(-50%) scale(1.1s);
   }
   
   .copyright {
