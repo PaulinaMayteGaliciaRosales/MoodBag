@@ -217,11 +217,12 @@
   }
   
   /* Estilos para cada tarjeta  (generada por JS) */
+  .inspiracion-card,
   .Personalizar-card {
   border: 2px solid #b9ddff;
   border-radius: 10px;
-  padding: 15px;
-  width: 250px;
+  padding: 12px;
+  width: 180px;
   background-color: #fabaf2;
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
@@ -229,15 +230,17 @@
   display: flex;
   flex-direction: column;
   }
-  
+  .inspiracion-card:hover,
   .Personalizar-card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
   }
   
+
+  .inspiracion-card img,
   .Personalizar-card img {
   width: 100%;
-  height: 197px;
+  height: 140px;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -245,6 +248,7 @@
   display: block;
   }
   
+  .inspiracion-card figcaption,
   .Personalizar-card figcaption {
   font-size: 1rem;
   color: #333;

@@ -35,7 +35,7 @@ function renderDw(genero = "all") {
 
     dwpaulinaToRender.forEach((dw) => {
         const cardHtml = `
-            <figure class="Personalizar-card" data-gender="${dw.genero}">
+            <figure class="inspiracion-card" data-gender="${dw.genero}">
                 <img src="${dw.image}" alt="MoodBag venta de bolsos, nombre: ${dw.name}">
                 <figcaption>${dw.name}</figcaption>
                 <div class="card-description">
