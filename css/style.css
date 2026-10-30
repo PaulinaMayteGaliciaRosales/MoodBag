@@ -226,7 +226,6 @@
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s, box-shadow 0.2s;
-  /* Nuevo: para mejor control del diseño interno */
   display: flex;
   flex-direction: column;
   }
@@ -239,9 +238,11 @@
   .Personalizar-card img {
   width: 100%;
   height: 197px;
-  object-fit:cover;
+  object-fit: cover;
+  object-position: center;
   border-radius: 10px;
   margin-bottom: 10px;
+  display: block;
   }
   
   .Personalizar-card figcaption {
@@ -271,11 +272,11 @@
   padding: 10px;
   }
   
-  .column img {
+
+.column img {
   border: 7px solid #ec27d2;
   border-radius: 15px;
   }
-
 
   .row h3 {
   text-align: center;
@@ -315,26 +316,26 @@
   }
   }
   
-  #contacto-MoodBag, .redes-sociales {
+  .contacto-MoodBag, .redes-sociales {
   padding: 0 10px;
   }
   
-  #contacto-MoodBag h3, .redes-sociales h3 {
+  .contacto-MoodBag h3, .redes-sociales h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   }
   
-  #contacto-MoodBag address p {
+  .contacto-MoodBag address p {
   margin: 5px 0;
   }
   
-  #contacto-MoodBag a {
+  .contacto-MoodBag a {
   color: #d728ce;
   text-decoration: none;
   transition: color 0.3s;
   }
   
-  #contacto-MoodBag a:hover {
+  .contacto-MoodBag a:hover {
   text-decoration: underline;
   }
   
